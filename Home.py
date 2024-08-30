@@ -62,7 +62,7 @@ if prompt := st.chat_input("Ask questions here"):
 # Display the prior chat messages
 for message in st.session_state.chat_history:
      with st.chat_message(message["role"]):
-          st.write(message["content"])
+          st.markdown(message["content"])
 
 
 # If last message is not from assistant, generate a new response
@@ -71,7 +71,7 @@ if st.session_state.chat_history[-1]["role"] != "assistant":
           with st.spinner("Thinking..."):
                # Use the chat engine to generate a response
                response = st.session_state.chat_engine.chat(prompt)
-               st.write(response.response)
+               st.markdown(response.response)
 
                # Add the response to the chat history
                message = {"role": "assistant", "content": response.response}
