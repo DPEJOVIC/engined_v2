@@ -1,4 +1,4 @@
-openai
-streamlit
-llama-index
-nltk
+openai==1.43.0
+streamlit==1.38.0
+llama-index==0.11.2
+nltk==3.9.1
