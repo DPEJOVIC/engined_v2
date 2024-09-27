@@ -19,7 +19,7 @@ def setup():
 
     # Initialise chat history
     if "chat_history" not in st.session_state:
-        st.session_state["chat_history"] = [{"role": "assistant", "content": "Hi, I'm ENGINED. Ask me about Factorio and the problems you need to solve."}]
+        st.session_state["chat_history"] = [{"role": "assistant", "content": "Hi I’m ENGINED, your sassy AI-robot companion! I survived the crash too, but I’m a bit scrambled. I can help retrieve engineering data… or chat about what the hell is going on with this planet…"}]
 
     # Initialise system prompt
     with open("sysprompt.txt", "r") as file:
